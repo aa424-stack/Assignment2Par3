@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>String Reversal</title>
+        <title>Tip Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="RevS.css">
+        <link rel="stylesheet" type="text/css" href="tipcalc.css">
     </head>
     <body>
         <form>
-            <h1>String Reversal</h1>
-            <label for="inputString">Enter a string to reverse:</label><br>
-            <input type="text" id="inputString" name="inputString" required><br><br>
-            <input type="button" value="Reverse String" id = "RSButton"><br>
-            <label for="outputString">Reversed string:</label><br>
-            <input type="text" id="outputString" name="outputString" readonly><br><br>
+            <h1>Tip Calculator</h1>
+            <label for="billAmount">Enter bill amount:</label><br>
+            <input type="number" id="bill_amount" name="bill_amount" step="0.01" required><br><br>
+            <label for="tipPercentage">Enter tip percentage:</label><br>
+            <input type="number" id="tip_percentage" name="tip_percentage" step="0.01" required><br><br>
+            <input type="button" value="Calculate Tip" id="calc_button"><br>
+            <label for="totalAmount">Total amount:</label><br>
+            <input type="text" id="total_amount" name="total_amount" readonly><br><br>
         </form>
-        <script src="RevS.js"></script>
+        <script src="tipcalc.js"></script>
     </body>
 </html>
